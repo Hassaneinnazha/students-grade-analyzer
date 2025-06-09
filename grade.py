@@ -44,6 +44,8 @@ def count_passed(grades):
     while i<len(grades):
       if grade>=60:
          count+=1
+      else: 
+         print("sorry you didn't pass")
       i+=1
     return count
         
