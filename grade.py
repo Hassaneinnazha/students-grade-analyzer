@@ -26,8 +26,8 @@ def get_avg_grade(grades):
     return total / len(grades)
 
 def get_heighest_grade(names,grades):
-    if len(grades) == 0:  
-        return None
+    # if len(grades) == 0:  
+    #     return None
     i=0
     high_grade=grades[0]
     high_name=names[0]
@@ -47,6 +47,7 @@ def count_passed(grades):
       i+=1
     if count==0:
       print("sorry you didn't pass")
+      
     return count
         
 grades=[]
@@ -60,8 +61,7 @@ while i<num:
     names.append(name)
     grades.append(grade)
     i+=1
-show=display_student_summary(names,grades)
-print(show)
+display_student_summary(names,grades)
 average=get_avg_grade(grades)
 print("The average of class is: ",average)
 max=get_heighest_grade(names,grades)
