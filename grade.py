@@ -42,11 +42,11 @@ def count_passed(grades):
     count =0
     i=0
     while i<len(grades):
-      if grade>=60:
+      if grades[i]>=60:
          count+=1
-      else: 
-         print("sorry you didn't pass")
       i+=1
+    if count==0:
+      print("sorry you didn't pass")
     return count
         
 grades=[]
